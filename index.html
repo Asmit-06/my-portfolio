@@ -3,238 +3,396 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Asmit Chhotaray | CSE Student & Developer</title>
-
+    <meta name="theme-color" content="#08090b" />
     <meta
       name="description"
       content="Portfolio of Asmit Chhotaray — Computer Science student building web applications and machine learning projects."
     />
+    <meta property="og:title" content="Asmit Chhotaray | CSE Student & Developer" />
+    <meta
+      property="og:description"
+      content="Computer Science student building useful web experiences and learning in public."
+    />
+    <meta property="og:type" content="website" />
 
+    <title>Asmit Chhotaray | CSE Student &amp; Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="#home" class="logo"> Asmit<span>.</span> </a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+      <div class="nav-container">
+        <a class="logo" href="#home" aria-label="Asmit Chhotaray home">
+          Asmit Chhotaray<span>.</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="site-menu">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link nav-link--cta" href="#contact">
+            Let&apos;s talk <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
     </nav>
 
-    <!-- HERO -->
-    <main>
-      <section id="home" class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">COMPUTER SCIENCE & ENGINEERING</p>
+    <main id="main-content">
+      <!-- HERO -->
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-content" data-reveal>
+            <p class="eyebrow">
+              <span class="eyebrow-line" aria-hidden="true"></span>
+              Computer science &amp; engineering
+            </p>
 
-          <h1>
-            Building things,
-            <span>learning along the way.</span>
-          </h1>
+            <h1 id="hero-title">
+              Building useful things,
+              <span>one idea at a time.</span>
+            </h1>
 
-          <p class="hero-description">
-            I'm Asmit, a Computer Science student interested in software
-            development, machine learning, and building useful web experiences.
-          </p>
+            <p class="hero-description">
+              I&apos;m Asmit, a Computer Science student interested in software
+              development, machine learning, and building thoughtful web
+              experiences.
+            </p>
 
-          <div class="hero-buttons">
-            <a href="#projects" class="button primary"> View my work </a>
+            <div class="hero-buttons">
+              <a class="button button--primary" href="#projects">
+                View my work <span aria-hidden="true">↓</span>
+              </a>
+              <a class="button button--secondary" href="#contact">
+                Get in touch <span aria-hidden="true">↗</span>
+              </a>
+            </div>
 
-            <a href="#contact" class="button secondary"> Get in touch </a>
+            <div class="hero-meta" aria-label="Profile details">
+              <span><i class="status-dot" aria-hidden="true"></i> Open to learning opportunities</span>
+              <span>Bhubaneswar, India</span>
+            </div>
           </div>
+
+          <div class="hero-visual" data-reveal aria-hidden="true">
+            <div class="hero-orbit hero-orbit--one"></div>
+            <div class="hero-orbit hero-orbit--two"></div>
+
+            <div class="code-card">
+              <div class="code-card__top">
+                <span class="window-dots"><i></i><i></i><i></i></span>
+                <span>asmit.dev / now</span>
+              </div>
+
+              <div class="code-card__body">
+                <div class="code-line"><span class="line-number">01</span><span><b>const</b> <em>curiosity</em> = <strong>&quot;build&quot;</strong>;</span></div>
+                <div class="code-line"><span class="line-number">02</span><span><b>const</b> <em>learning</em> = <strong>true</strong>;</span></div>
+                <div class="code-line"><span class="line-number">03</span><span>&nbsp;</span></div>
+                <div class="code-line"><span class="line-number">04</span><span><b>while</b> (learning) {</span></div>
+                <div class="code-line code-line--indent"><span class="line-number">05</span><span><em>ship</em>(somethingUseful);</span></div>
+                <div class="code-line"><span class="line-number">06</span><span>}</span></div>
+              </div>
+
+              <div class="code-card__bottom">
+                <span>STATUS: IN PROGRESS</span>
+                <span class="pulse-label"><i></i> 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <a class="scroll-cue" href="#about">
+            <span>Scroll to explore</span>
+            <i aria-hidden="true">↓</i>
+          </a>
         </div>
       </section>
 
       <!-- ABOUT -->
-      <section id="about" class="section">
-        <div class="section-label">01 — ABOUT</div>
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-label"><span>01</span> — About</div>
 
         <div class="about-grid">
-          <div>
-            <h2>
-              A student who likes
-              <span>building.</span>
-            </h2>
+          <div class="section-title" data-reveal>
+            <p class="mini-note">Curious by default.</p>
+            <h2 id="about-title">A student who likes <span>building.</span></h2>
           </div>
 
-          <div class="about-text">
+          <div class="about-copy" data-reveal>
             <p>
-              I'm a B.Tech Computer Science and Engineering student exploring
-              software engineering, machine learning, and modern web
-              development.
+              I&apos;m a B.Tech Computer Science and Engineering student exploring
+              software engineering, machine learning, and modern web development.
             </p>
-
             <p>
               I enjoy taking an idea, breaking it into smaller problems, and
               turning those problems into working software.
             </p>
-
             <p>
               This portfolio is a growing collection of the projects and
-              experiments I'm working on.
+              experiments I&apos;m working on.
             </p>
+
+            <div class="about-facts">
+              <div>
+                <span class="fact-number">01</span>
+                <span>Learn by doing</span>
+              </div>
+              <div>
+                <span class="fact-number">02</span>
+                <span>Build with purpose</span>
+              </div>
+              <div>
+                <span class="fact-number">03</span>
+                <span>Keep improving</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- PROJECTS -->
-      <section id="projects" class="section projects-section">
-        <div class="section-label">02 — SELECTED WORK</div>
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="section-label"><span>02</span> — Selected work</div>
 
-        <div class="section-heading">
-          <h2>
-            Things I've
-            <span>worked on.</span>
-          </h2>
-
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="mini-note">A work in progress.</p>
+            <h2 id="projects-title">Things I&apos;ve <span>worked on.</span></h2>
+          </div>
           <p>
-            A few projects that show what I'm currently learning and building.
+            A few projects that show what I&apos;m currently learning, testing, and
+            building.
           </p>
         </div>
 
-        <!-- PROJECT CARD -->
-        <article class="project-card">
-          <div class="project-number">01</div>
-
-          <div class="project-content">
-            <p class="project-type">FULL STACK WEB DEVELOPMENT</p>
-
-            <h3>Expense Tracker Web Application</h3>
-
-            <p>
-              A full-stack web application that allows users to track their
-              expenses, visualize spending patterns, and manage their finances
-              effectively. Built with React for the frontend, Node.js and
-              Express for the backend, and MongoDB for data storage.
-            </p>
-
-            <div class="project-tags">
-              <span>MERN Stack</span>
-              <span>React</span>
-              <span>Node.js</span>
-              <span>Express.js</span>
-              <span>MongoDB</span>
-              <span>Rest APIs</span>
-              <span>Tailwind CSS</span>
+        <div class="project-list">
+          <!-- PROJECT ONE -->
+          <article class="project-card project-card--featured" data-reveal>
+            <div class="project-index">
+              <span>01</span>
+              <small>Featured</small>
             </div>
 
-            <div class="project-links">
-              <a
-                href="https://github.com/Asmit-06/Expense-Tracker"
-                target="_blank"
-              >
-                GitHub ↗
-              </a>
+            <div class="project-content">
+              <div class="project-topline">
+                <p class="project-type">Full-stack web development</p>
+                <a href="https://github.com/Asmit-06/Expense-Tracker" target="_blank" rel="noopener noreferrer">
+                  <span class="project-arrow" aria-hidden="true">↗</span>
+                </a>
+               
+              </div>
+
+              <h3>Expense Tracker <span>Web Application</span></h3>
+              <p class="project-description">
+                A full-stack web application that helps users track expenses,
+                visualize spending patterns, and manage their finances
+                effectively. Built with React, Node.js, Express, and MongoDB.
+              </p>
+
+              <div class="project-tags" aria-label="Technologies used">
+                <span>MERN Stack</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>REST APIs</span>
+                <span>Tailwind CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Asmit-06/Expense-Tracker" target="_blank" rel="noopener noreferrer">
+                  GitHub <span aria-hidden="true">↗</span>
+                </a>
+              </div>
             </div>
-          </div>
-        </article>
 
-        <!-- SECOND PROJECT PLACEHOLDER -->
-        <article class="project-card">
-          <div class="project-number">02</div>
+            <div class="project-visual project-visual--expense" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-window__bar">
+                  <span class="window-dots"><i></i><i></i><i></i></span>
+                  <span>overview</span>
+                </div>
+                <div class="mock-window__content">
+                  <div class="mock-heading">
+                    <span>Total balance</span>
+                    <strong>₹24,580</strong>
+                  </div>
+                  <div class="mock-chart">
+                    <i style="height: 31%"></i>
+                    <i style="height: 50%"></i>
+                    <i style="height: 42%"></i>
+                    <i style="height: 67%"></i>
+                    <i style="height: 53%"></i>
+                    <i style="height: 82%"></i>
+                    <i style="height: 72%"></i>
+                    <i style="height: 92%"></i>
+                  </div>
+                  <div class="mock-legend"><span><i></i> Spending overview</span><span>Last 8 weeks</span></div>
+                  <div class="mock-rows">
+                    <span>Food &amp; dining <b>₹3,240</b></span>
+                    <span>Transport <b>₹1,890</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
 
-          <div class="project-content">
-            <p class="project-type">Animated Landing Page</p>
-
-            <h3>Two Good Co Website Landing Page</h3>
-
-            <p>
-              A landing page of two good co. Built with React, Tailwind CSS and Gsap. The landing page is fully responsive and has smooth animations. Created for the purpose of learning and improving my skills in web development and animation.
-            </p>
-
-            <div class="project-tags">
-              <span>Frontend</span>
-              <span>React</span>
-              <span>TailWind CSS</span>
-              <span>GSAP</span>
-              <span>Animations</span>
+          <!-- PROJECT TWO -->
+          <article class="project-card" data-reveal>
+            <div class="project-index">
+              <span>02</span>
+              <small>Frontend</small>
             </div>
 
-            <div class="project-links">
-              <a
-                href="https://github.com/Asmit-06/Two-Good-Co-Website"
-                target="_blank"
-              >
-                GitHub ↗
-              </a>
-
-              <a
-              href="https://two-good-co-website-508yv65si-asmitchhotaray-6883s-projects.vercel.app"
-              target="_blank"
-            >
-              Live Url ↗
-            </a>
-            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <p class="project-type">Animated landing page</p>
+                <a href="https://two-good-co-website-508yv65si-asmitchhotaray-6883s-projects.vercel.app" target="_blank" rel="noopener noreferrer">
+                  <span class="project-arrow" aria-hidden="true">↗</span>
+                </a>
             
+              </div>
 
-          </div>
-        </article>
+              <h3>Two Good Co <span>Website Landing Page</span></h3>
+              <p class="project-description">
+                A responsive landing page built to practice modern frontend
+                development and motion design, with smooth GSAP animations and
+                a clean Tailwind CSS workflow.
+              </p>
+
+              <div class="project-tags" aria-label="Technologies used">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>GSAP</span>
+                <span>Responsive UI</span>
+                <span>Animations</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Asmit-06/Two-Good-Co-Website" target="_blank" rel="noopener noreferrer">
+                  GitHub <span aria-hidden="true">↗</span>
+                </a>
+                <a href="https://two-good-co-website-508yv65si-asmitchhotaray-6883s-projects.vercel.app" target="_blank" rel="noopener noreferrer">
+                  Live URL <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-visual project-visual--two-good" aria-hidden="true">
+              <div class="mock-browser">
+                <div class="mock-browser__top">
+                  <span class="window-dots"><i></i><i></i><i></i></span>
+                  <span>two good co.</span>
+                </div>
+                <div class="mock-browser__body">
+                  <div class="mock-brand">two<br />good<br />co.</div>
+                  <div class="mock-sun"></div>
+                  <div class="mock-browser__caption">be good. do good.</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <!-- SKILLS -->
-      <section id="skills" class="section">
-        <div class="section-label">03 — SKILLS</div>
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="section-label"><span>03</span> — Skills</div>
+
+        <div class="skills-intro" data-reveal>
+          <p class="mini-note">Tools I use to make ideas real.</p>
+          <h2 id="skills-title">Learning, then <span>shipping.</span></h2>
+        </div>
 
         <div class="skills-grid">
-          <div class="skill-group">
+          <article class="skill-group" data-reveal>
+            <div class="skill-group__header"><span>01</span><span>Core</span></div>
             <h3>Languages</h3>
+            <ul class="skill-list">
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+              <li>Python</li>
+            </ul>
+          </article>
 
-            <p>Java · JavaScript · HTML · CSS · SQL · Python</p>
-          </div>
-
-          <div class="skill-group">
+          <article class="skill-group" data-reveal>
+            <div class="skill-group__header"><span>02</span><span>Build</span></div>
             <h3>Development</h3>
+            <ul class="skill-list">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Git &amp; GitHub</li>
+              <li>Postman</li>
+            </ul>
+          </article>
 
-            <p>React · Node.js · Express · MongoDB · Git · GitHub . Postman</p>
-          </div>
-
-          <div class="skill-group">
+          <article class="skill-group skill-group--learning" data-reveal>
+            <div class="skill-group__header"><span>03</span><span>Next</span></div>
             <h3>Currently learning</h3>
-
-            <p>Machine Learning · Three.js · Advanced DSA</p>
-          </div>
+            <ul class="skill-list">
+              <li>Machine Learning</li>
+              <li>SQL</li>
+              <li>Advanced DSA</li>
+            </ul>
+          </article>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="section contact-section">
-        <div class="section-label">04 — CONTACT</div>
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-label"><span>04</span> — Contact</div>
 
-        <div class="contact-content">
-          <h2>
-            Let's build
-            <span>something.</span>
-          </h2>
-
+        <div class="contact-content" data-reveal>
+          <p class="mini-note">Have an idea or an opportunity?</p>
+          <h2 id="contact-title">Let&apos;s build <span>something.</span></h2>
           <p>
-            I'm always interested in interesting projects, learning
-            opportunities, and conversations around technology.
+            I&apos;m interested in interesting projects, learning opportunities,
+            and conversations around technology.
           </p>
 
+          <a class="contact-email" href="mailto:asmitchhotaray@gmail.com">
+            asmitchhotaray@gmail.com <span aria-hidden="true">↗</span>
+          </a>
+
           <div class="contact-links">
-            <a href="https://github.com/Asmit-06" target="_blank"> GitHub ↗ </a>
-
-            <a href="mailto:asmitchhotaray@gmail.com"> Email ↗ </a>
-
-            <a href="https://www.linkedin.com/in/asmit-chhotaray-375003373/"> LinkedIn ↗ </a>
+            <a href="https://github.com/Asmit-06" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/asmit-chhotaray-375003373/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
-      <p>© 2026 Asmit Chhotaray</p>
-
-      <p>Built while learning.</p>
+      <p>© <span id="year">2026</span> Asmit Chhotaray</p>
+      <p>Built while learning <span class="footer-mark" aria-hidden="true">✳</span></p>
     </footer>
 
     <script src="script.js"></script>
