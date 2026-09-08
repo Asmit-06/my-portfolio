@@ -249,6 +249,14 @@ const projectData = {
     github: "https://github.com/Asmit-06/Two-Good-Co-Website",
     live: "https://two-good-co-website-508yv65si-asmitchhotaray-6883s-projects.vercel.app",
   },
+  vault: {
+    kicker: "03 / Full-stack web development",
+    title: "System Vault Web Application",
+    description: "A full-stack web application that helps users organize and manage their files efficiently. Built with React, Node.js, Express, MongoDB, and Cloudinary.",
+    tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "Axios", "Mongo DB", "Cloudinary"],
+    github: "https://github.com/Asmit-06/SystemVault",
+    live: "https://system-vault-seven.vercel.app",
+  },
 };
 
 const openProjectDialog = (projectKey) => {
